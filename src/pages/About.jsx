@@ -14,7 +14,7 @@ const About = () => {
       exit={{ y: "-100%", transition: { type: "tween" } }}
       className="bg-black text-white"
     >
-      <Header theme={"white"} />
+      <Header theme={"white"} bgColor="black"/>
       <Title color={"#1F2937"} title={"ABOUT"}/>
       <div className="md:flex justify-around h-screen items-center p-20">
         <motion.div
@@ -55,7 +55,7 @@ const About = () => {
           }}
         />
       </div>
-      <Social />
+      <Social theme="white"/>
     </motion.div>
   );
 };

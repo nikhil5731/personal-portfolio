@@ -43,7 +43,7 @@ const Header = ({ theme = "black", bgColor = "white" }) => {
         <span className="font-mono text-5xl font-bold">NK</span>
         <button
           onClick={handleClick}
-          className="border-2 border-black px-7 py-2 rounded-2xl hover:text-white hover:bg-black transition-all w-28"
+          className="border-2 border-black px-7 py-2 rounded-2xl text-black bg-white hover:text-white hover:bg-black hover:border-white transition-all w-28"
         >
           <span className="text-xl">{isPlay ? "Pause" : "Play"}</span>
         </button>
@@ -53,7 +53,7 @@ const Header = ({ theme = "black", bgColor = "white" }) => {
         <div
           className={`p-2 border-2 border-${theme} bg-${
             theme === "white" ? "black" : "white"
-          } rounded-full hover:bg-green-300 transition-all`}
+          } rounded-full hover:bg-green-300 hover:text-green-900 transition-all`}
         >
           <svg
             aria-hidden="true"
