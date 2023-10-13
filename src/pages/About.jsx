@@ -4,8 +4,9 @@ import Social from "../components/Social";
 import Astronaut from "../assets/astronaut.png";
 import { motion } from "framer-motion";
 import Title from "../utils/Title";
+import Stars from "../utils/Stars";
 
-const About = () => {
+const About = ({ isPlay, audio, setIsPlay }) => {
   return (
     <motion.div
       initial={{ y: 0, opacity: 0 }}
@@ -14,11 +15,18 @@ const About = () => {
       exit={{ y: "-100%", transition: { type: "tween" } }}
       className="bg-black text-white"
     >
-      <Header theme={"white"} bgColor="black"/>
-      <Title color={"#1F2937"} title={"ABOUT"}/>
-      <div className="md:flex justify-around h-screen items-center p-20">
+      <Stars/>
+      <Header
+        theme={"white"}
+        bgColor="black"
+        audio={audio}
+        isPlay={isPlay}
+        setIsPlay={setIsPlay}
+      />
+      <Title color={"#1F2937"} title={"ABOUT"} />
+      <div className="flex flex-wrap justify-around h-screen items-center px-5 py-32 md:px-2">
         <motion.div
-          className="aboutContent lg:w-1/2 text-2xl text-left flex flex-col gap-4 p-10"
+          className="aboutContent w-11/12 md:w-1/2 sm:text-2xl text-left flex flex-col gap-4 p-4 lg:p-10 z-0"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1 }}
@@ -39,7 +47,7 @@ const About = () => {
           </div>
         </motion.div>
         <motion.img
-          className="scale-150"
+          className="absolute sm:static bottom-0 right-0 w-28 md:w-fit"
           src={Astronaut}
           alt=""
           initial={{
@@ -55,7 +63,7 @@ const About = () => {
           }}
         />
       </div>
-      <Social theme="white"/>
+      <Social theme="white" />
     </motion.div>
   );
 };

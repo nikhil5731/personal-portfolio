@@ -22,7 +22,7 @@ const linksVariant = {
 const Footer = () => {
   return (
     <motion.div
-      className="fixed bottom-0 w-full h-[10vh] flex justify-evenly text-xl lg:text-2xl border-t-4 bg-white border-black py-4"
+      className="fixed bottom-0 w-full h-[10%] flex justify-evenly text-lg lg:text-2xl border-t-4 bg-white border-black px-2 py-4"
       animate={{
         bottom: 0,
       }}
@@ -69,7 +69,7 @@ const Footer = () => {
         whileTap="click"
       >
         <Link
-        target="__blank"
+          target="__blank"
           to={
             "https://drive.google.com/file/d/13NFIl3UvMNcczEV4mcBKCnjpD_aQ_hLn/view?usp=sharing"
           }

@@ -6,31 +6,34 @@ import Social from "../components/Social";
 import { motion } from "framer-motion";
 import ProfilePic from "../assets/profile-pic.png";
 
-const Home = () => {
+const Home = ({ audio, isPlay, setIsPlay }) => {
   const [on, setOn] = useState(false);
-
   return (
     <motion.div
       className="overflow-hidden h-screen w-screen"
       transition={{ duration: 0.75, ease: "easeOut" }}
       exit={{ y: "-100%", transition: { type: "tween" } }}
     >
-      <Header bgColor={`${on ? "black" : "white"}`} />
+      <Header
+        bgColor={`${on ? "black" : "white"}`}
+        audio={audio}
+        isPlay={isPlay}
+        setIsPlay={setIsPlay}
+      />
       <motion.div
-        className="absolute overflow-hidden scale-1/2 z-20 m-auto"
+        className="absolute overflow-hidden scale-75 z-20"
         initial={{
-          translateX: "-50%",
-          translateY: "-50%",
-          top: "50%",
-          left: "50%",
-          scale: 1,
+          translateX: "50%",
+          translateY: "50%",
+          bottom: "50%",
+          right: "50%",
         }}
         animate={{
-          translateX: on ? "-10%" : "-50%",
-          translateY: on ? "-5%" : "-50%",
-          top: on ? "63%" : "50%",
-          left: on ? "89%" : "50%",
-          scale: on ? 0.5 : 1,
+          translateX: on ? "15%" : "+50%",
+          translateY: on ? "-5%" : "+50%",
+          bottom: on ? "0%" : "50%",
+          right: on ? "0%" : "50%",
+          scale: on ? 0.4 : 1,
         }}
         transition={{
           duration: 1,
@@ -45,9 +48,9 @@ const Home = () => {
         <span className="text-xl">Click Here</span>
       </motion.div>
 
-      <motion.div className="md:flex">
+      <motion.div className="flex">
         <motion.div
-          className="bg-black w-screen border-2 border-black h-1/2 md:h-screen md:w-1/2"
+          className="bg-black border-2 border-black h-screen w-1/2"
           initial={{
             x: "-100%",
           }}
@@ -59,7 +62,7 @@ const Home = () => {
           }}
         ></motion.div>
         <motion.div
-          className="absolute w-2/3 flex h-96 z-10 intro"
+          className="absolute w-[60vw] md:w-full flex flex-col justify-center h-full md:flex-row md:h-96 z-10 intro"
           initial={{ opacity: 0, height: 0, visibility: "hidden" }}
           animate={{
             opacity: on ? 1 : 0,
@@ -71,23 +74,25 @@ const Home = () => {
             },
           }}
         >
-          <div className="text-white flex flex-col px-10 gap-3 border-white border-4 border-r-0 justify-center text-left h-full w-1/2 ">
-            <h2 className="text-7xl font-mono">Hi,</h2>
-            <h3 className="text-4xl font-mono">I am Nikhil Kumar</h3>
-            <h3 className="text-xl font-extralight font-mono">
+          <div className="md:text-white flex flex-col bg-white md:bg-transparent p-2 md:px-10 md:gap-3 md:border-white border-black border-4 border-b-0 md:border-b-4 md:border-r-0 md:justify-center text-left h-fit md:h-full md:w-1/3 ">
+            <h2 className="md:text-7xl font-mono ">Hi,</h2>
+            <h3 className="md:text-4xl text-2xl font-bold font-mono">
+              I am Nikhil Kumar
+            </h3>
+            <h3 className="md:text-xl font-extralight font-mono">
               I design and Code simple yet beautiful websites.
             </h3>
           </div>
-          <div className=" w-1/2 h-full border-black border-4 border-l-0 ">
+          <div className="md:w-1/3 h-1/2 md:h-full bg-white md:bg-transparent flex justify-center items-end border-black border-4 border-t-0 md:border-t-4 md:border-l-0 ">
             <img
               src={ProfilePic}
               alt=""
-              className=" absolute right-0 -bottom-3 scale-90"
+              className=" h-full md:h-auto md:w-64"
             />
           </div>
         </motion.div>
         <motion.div
-          className="bg-gray-200 border-2 border-black w-screen h-1/2 md:h-screen md:w-1/2"
+          className="bg-gray-200 border-2 border-black h-screen w-1/2"
           initial={{
             x: "100%",
           }}

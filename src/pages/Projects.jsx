@@ -1,10 +1,11 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import Header from "../components/Header";
 import Social from "../components/Social";
 import ProjectCard from "../utils/ProjectCard";
 import Spinner from "../utils/Spinner";
-import { motion, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 import Title from "../utils/Title";
+import Stars from "../utils/Stars";
 
 const containerVariant = {
   hidden: {
@@ -31,37 +32,24 @@ const childVariant = {
   },
 };
 
-const Projects = () => {
-  const ref = useRef(null);
-  const yinyang = useRef(null);
-
-  useEffect(() => {
-    let element = ref.current;
-
-    const rotate = () => {
-      element.style.transform = `translateX:(${-window.pageYOffset}px)`;
-
-      return (yinyang.current.style.transform =
-        "rotate(" + -window.pageXOffset + "deg)");
-    };
-
-    window.addEventListener("scroll", rotate);
-    return () => {
-      window.removeEventListener("scroll", rotate);
-    };
-  }, []);
+const Projects = ({ audio, isPlay, setIsPlay }) => {
 
   return (
     <div className="bg-black h-screen w-screen overflow-hidden">
-      <Header theme="white" />
+      <Header
+        theme={"white"}
+        bgColor="black"
+        audio={audio}
+        isPlay={isPlay}
+        setIsPlay={setIsPlay}
+      />
       <Title title={"PROJECTS"} color={"#1F2937"} />
-
+      <Stars/>
       <motion.div
-        className="flex overflow-scroll px-96 no-scrollbar gap-10 items-center h-full"
+        className="flex overflow-scroll px-20 md:px-96 no-scrollbar gap-3 items-center h-full"
         variants={containerVariant}
         initial="hidden"
         animate="show"
-        ref={ref}
       >
         {[1, 2, 3, 4, 5, 6, 7, 8, 9, 0].map((e, i) => {
           return (
@@ -72,11 +60,10 @@ const Projects = () => {
         })}
       </motion.div>
       <motion.div
-        ref={yinyang}
-        className="absolute top-[75vh] left-[88vw]"
-        style={{ scale: 0.5 }}
+        className="absolute -bottom-10 -right-10 z-20"
+        style={{ scale: 0.3 }}
       >
-        <Spinner repeat={0} />
+        <Spinner />
       </motion.div>
       <Social theme="white" />
     </div>

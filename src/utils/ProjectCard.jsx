@@ -2,16 +2,16 @@ import React from "react";
 
 const ProjectCard = () => {
   return (
-    <div className="flex flex-col min-w-[70vw] lg:min-w-[20vw] rounded-tr-[5rem] rounded-bl-[5rem] gap-2 bg-white px-8 py-6 text-left group hover:text-white hover:bg-black border-2 hover:border-white transition-all">
+    <div className="flex flex-col w-[16rem] rounded-2xl md:rounded-tr-[5rem] md:rounded-bl-[5rem] gap-2 bg-white p-3 md:px-6 md:py-6 text-left group hover:text-white hover:bg-black border-2 hover:border-white transition-all">
       <h2 className=" font-bold text-2xl">Agency Landing Page</h2>
-      <p className="text-lg">
+      <p className="text-lg max-h-20 overflow-y-scroll ">
         It is build on top of the React JS, with styledComponents and GSAP for
         smooth scrolling animations.
       </p>
       <div className="border-2 w-full border-black group-hover:border-white" />
       <p className="text-lg">#react #gsap #styledComponents</p>
       <div className="flex justify-between w-full gap-3 items-center">
-        <button className="h-full bg-black w-full text-white text-xl p-3 rounded-bl-[5rem] group-hover:bg-white group-hover:text-black">
+        <button className="h-full rounded-xl bg-black w-full text-white text-xl p-3 md:rounded-bl-[5rem] group-hover:bg-white group-hover:text-black">
           Visit
         </button>
         <svg

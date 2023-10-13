@@ -1,10 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const Spinner = ({ onClick, repeat = Infinity }) => {
+const Spinner = ({ onClick }) => {
   return (
     <motion.div
-      className=" bg-white rounded-full"
+      className={`bg-white rounded-full `}
       animate={{
         opacity: 1,
       }}
@@ -31,7 +31,7 @@ const Spinner = ({ onClick, repeat = Infinity }) => {
         animate={{
           rotate: 360,
         }}
-        transition={{ ease: "linear", duration: 2, repeat: repeat}}
+        transition={{ ease: "linear", duration: 2, repeat: Infinity}}
       >
         <path
           fill="currentColor"
