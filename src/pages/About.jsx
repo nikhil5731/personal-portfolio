@@ -15,7 +15,7 @@ const About = ({ isPlay, audio, setIsPlay }) => {
       exit={{ y: "-100%", transition: { type: "tween" } }}
       className="bg-black text-white"
     >
-      <Stars/>
+      <Stars />
       <Header
         theme={"white"}
         bgColor="black"
@@ -32,18 +32,24 @@ const About = ({ isPlay, audio, setIsPlay }) => {
           transition={{ duration: 1, delay: 1 }}
         >
           <div>
-            I'm a front-end developer located in India. I love to create simple
-            yet beautiful websites with great user experience.
+            Greetings! I'm Nikhil Kumar, a Delhi-based MERN stack developer
+            currently pursuing my third year at Delhi Technological University.
+            My professional focus centers on web development, and I specialize
+            in the MERN stack - MongoDB, Express.js, React, and Node.js.
+            functionality.
           </div>
           <div>
-            I'm interested in the whole frontend stack Like trying new things
-            and building great projects. I'm an independent freelancer and
-            blogger.
+            While my work revolves around code and databases, my creative side
+            finds expression in design and video editing. Designing visuals and
+            editing videos allow me to unleash my artistic instincts and produce
+            engaging, visually appealing content.
           </div>
           <div>
-            I love to write blogs and read books. I believe everything is an Art
-            when you put your consciousness in it. You can connect with me via
-            social links.
+            Beyond the world of technology, I'm deeply immersed in hip hop music
+            and pop culture. The rhythm and lyrics of hip hop inspire me, and I
+            find resonance with the ever-evolving landscape of pop culture.
+            These interests keep me in touch with the pulse of contemporary
+            society, fostering a well-rounded perspective.
           </div>
         </motion.div>
         <motion.img

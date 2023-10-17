@@ -6,6 +6,7 @@ import Spinner from "../utils/Spinner";
 import { motion } from "framer-motion";
 import Title from "../utils/Title";
 import Stars from "../utils/Stars";
+import { projectList } from "./skillsData";
 
 const containerVariant = {
   hidden: {
@@ -33,7 +34,6 @@ const childVariant = {
 };
 
 const Projects = ({ audio, isPlay, setIsPlay }) => {
-
   return (
     <div className="bg-black h-screen w-screen overflow-hidden">
       <Header
@@ -44,17 +44,23 @@ const Projects = ({ audio, isPlay, setIsPlay }) => {
         setIsPlay={setIsPlay}
       />
       <Title title={"PROJECTS"} color={"#1F2937"} />
-      <Stars/>
+      <Stars />
       <motion.div
-        className="flex overflow-scroll px-20 md:px-96 no-scrollbar gap-3 items-center h-full"
+        className="flex overflow-scroll px-20 md:px-96 no-scrollbar gap-5 items-center h-full"
         variants={containerVariant}
         initial="hidden"
         animate="show"
       >
-        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 0].map((e, i) => {
+        {projectList.map((e, i) => {
           return (
             <motion.div variants={childVariant} className="z-10">
-              <ProjectCard />
+              <ProjectCard
+                name={e.name}
+                desc={e.desc}
+                hashtags={e.hashtags}
+                liveLink={e.liveLink}
+                gitHubLink={e.githubLink}
+              />
             </motion.div>
           );
         })}
