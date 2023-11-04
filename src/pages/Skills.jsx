@@ -12,7 +12,7 @@ const Skills = ({ audio, isPlay, setIsPlay }) => {
       className="w-screen h-screen"
     >
       <Header audio={audio} isPlay={isPlay} setIsPlay={setIsPlay} />
-      <FountainSkills/>
+      <FountainSkills />
       <motion.div
         className="h-full w-full md:p-28 py-24 pl-12 pr-10"
         initial={{
@@ -99,6 +99,20 @@ const Skills = ({ audio, isPlay, setIsPlay }) => {
                   y="0px"
                   width="70"
                   height="70"
+                  fill="currentcolor"
+                  viewBox="0 0 50 50"
+                >
+                  <path d="M45,4H5C4.447,4,4,4.448,4,5v40c0,0.552,0.447,1,1,1h40c0.553,0,1-0.448,1-1V5C46,4.448,45.553,4,45,4z M29,26.445h-5V42h-4	V26.445h-5V23h14V26.445z M30.121,41.112v-4.158c0,0,2.271,1.712,4.996,1.712c2.725,0,2.62-1.782,2.62-2.026	c0-2.586-7.721-2.586-7.721-8.315c0-7.791,11.25-4.717,11.25-4.717l-0.14,3.704c0,0-1.887-1.258-4.018-1.258s-2.9,1.013-2.9,2.096	c0,2.795,7.791,2.516,7.791,8.141C42,44.955,30.121,41.112,30.121,41.112z"></path>
+                </svg>
+                Typescript
+              </div>
+              <div className="flex flex-col items-center lg:gap-2 h-20 lg:h-fit">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="70"
+                  height="70"
                   fill="currentColor"
                   viewBox="0 0 50 50"
                 >
@@ -170,6 +184,22 @@ const Skills = ({ audio, isPlay, setIsPlay }) => {
               Technologies and Frameworks:
             </span>
             <div className="mt-4 flex flex-wrap lg:justify-center items-center lg:gap-4">
+              <div className="flex flex-col items-center gap-2 h-20 lg:h-fit">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="70"
+                  height="70"
+                  viewBox="0 0 48 48"
+                >
+                  <path
+                    fill="currentcolor"
+                    d="M18.974,31.5c0,0.828-0.671,1.5-1.5,1.5s-1.5-0.672-1.5-1.5v-14c0-0.653,0.423-1.231,1.045-1.43 c0.625-0.198,1.302,0.03,1.679,0.563l16.777,23.704C40.617,36.709,44,30.735,44,24c0-11-9-20-20-20S4,13,4,24s9,20,20,20 c3.192,0,6.206-0.777,8.89-2.122L18.974,22.216V31.5z M28.974,16.5c0-0.828,0.671-1.5,1.5-1.5s1.5,0.672,1.5,1.5v13.84l-3-4.227 V16.5z"
+                  ></path>
+                </svg>
+                NextJS
+              </div>
               <div className="flex flex-col items-center gap-2 h-20 lg:h-fit">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

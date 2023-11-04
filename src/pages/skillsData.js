@@ -1,5 +1,12 @@
 export const projectList = [
   {
+    name: "MicroHub",
+    desc: "A micro-blogging platform | NextJS, MongoDB & TypeScript",
+    hashtags: "#typescript #NextJS #socialmedia #completed",
+    liveLink: "https://microhub01.netlify.app/",
+    githubLink: "https://github.com/nikhil5731/microhub",
+  },
+  {
     name: "Personal Portfolio",
     desc: "Animated Portfolio Website | ReactJS, Tailwind CSS & Framer Motion",
     hashtags: "#react #framermotion #completed",
@@ -21,8 +28,8 @@ export const projectList = [
     githubLink: "https://github.com/nikhil5731/vihaan6.0",
   },
   {
-    name: "MicroHub",
-    desc: "A micro-blogging Platform with chat functionality | MERN STACK",
+    name: "Thread",
+    desc: "Thread social media clone using MERN | MERN STACK",
     hashtags: "#MERN #FullStack #threads #completed",
     liveLink: "https://threads-new-frontend.onrender.com/",
     githubLink: "https://github.com/nikhil5731/threads-new",
