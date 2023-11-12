@@ -13,19 +13,20 @@ export const projectList = [
     liveLink: "https://nikhilkportfolio.netlify.app/",
     githubLink: "https://github.com/nikhil5731/personal-portfolio",
   },
-  {
-    name: "CineVerse",
-    desc: "Movie Database Website | ReactJS, Tailwind CSS & OMDB API",
-    hashtags: "#react #api #omdb #completed",
-    liveLink: "https://omdb4.netlify.app/",
-    githubLink: "https://github.com/nikhil5731/omdb",
-  },
+
   {
     name: "Vihaan 6.0",
     desc: "Frontend website for Vihaan 6.0 Hackathon | HTML, CSS & JavaScript",
     hashtags: "#html #css #javascript #completed",
     liveLink: "https://vihaan6.netlify.app/",
     githubLink: "https://github.com/nikhil5731/vihaan6.0",
+  },
+  {
+    name: "BlinkBox",
+    desc: "Temporary Disposable Mails | NextJS, Tailwind CSS & Typescript",
+    hashtags: "#nextjs #api #typescript #completed",
+    liveLink: "https://blinkbox.netlify.app/",
+    githubLink: "https://github.com/nikhil5731/BlinkBox",
   },
   {
     name: "Thread",
@@ -47,5 +48,12 @@ export const projectList = [
     hashtags: "#ai #ml #counselling #completed",
     liveLink: "https://github.com/nikhil5731/launchpad-counselling",
     githubLink: "https://github.com/nikhil5731/launchpad-counselling",
+  },
+  {
+    name: "CineVerse",
+    desc: "Movie Database Website | ReactJS, Tailwind CSS & OMDB API",
+    hashtags: "#react #api #omdb #completed",
+    liveLink: "https://omdb4.netlify.app/",
+    githubLink: "https://github.com/nikhil5731/omdb",
   },
 ];

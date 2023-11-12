@@ -32,7 +32,7 @@ const About = ({ isPlay, audio, setIsPlay }) => {
           transition={{ duration: 1, delay: 1 }}
         >
           <div>
-            Greetings! I'm Nikhil Kumar, a Delhi-based MERN stack developer
+            Greetings! I'm Nikhil Kumar, a Delhi-based Full stack developer
             currently pursuing my third year at Delhi Technological University.
             My professional focus centers on web development, and I specialize
             in the MERN stack - MongoDB, Express.js, React, and Node.js.
