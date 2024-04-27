@@ -1,5 +1,5 @@
 import React from "react";
-import Particles from "react-particles";
+import Particles from "react-tsparticles";
 import { loadStarsPreset } from "tsparticles-preset-stars";
 
 const Stars = () => {

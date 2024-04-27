@@ -1,5 +1,5 @@
 import React from "react";
-import Particles from "react-particles";
+import Particles from "react-tsparticles";
 import { loadFountainPreset } from "tsparticles-preset-fountain";
 
 const FountainSkills = () => {
