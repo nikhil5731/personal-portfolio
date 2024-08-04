@@ -71,7 +71,7 @@ const Footer = () => {
         <Link
           target="__blank"
           to={
-            "https://drive.google.com/file/d/13NFIl3UvMNcczEV4mcBKCnjpD_aQ_hLn/view?usp=sharing"
+            "https://drive.google.com/file/d/1bMziMtuHbQ5IjDU8UGWLCEQrvJ39de6m/view?usp=sharing"
           }
         >
           Resume
